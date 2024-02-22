@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+var pociag = {
+  dlugosc: '200m',
+szerokosc: '100cm',
+ szybkosc: '200km',
+  pokaz: function () {
+    document.write(this.dlugosc + 'x' + this.szerokosc + ' ' + this.szybkosc)
+  }
+};
+pociag.pokaz();
+pociag.rodzaj = 'pendolino';
+pociag.wypisz = function() {
+  alert('Rodzaj: ' + this.rodzaj);
+};
+pociag.wypisz();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe-Wiktor Bieganski
+</body>
+</html>
+
+
+

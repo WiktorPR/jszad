@@ -1,0 +1,46 @@
+<TD><br><b>Kod</b><br> <textarea cols="60" rows="20">
+<html>
+<head>
+<script type="text/javascript">
+var pociag  = {
+  dlugosc: '200m',
+szerokosc: '100cm',
+ szybkosc: '200km',
+  pokaz: function() {
+    document.write(this.dlugosc + 'x' + this.szerokosc + ' ' + this.szybkosc)
+  }
+}
+pociag.pokaz();
+pociag.rodzaj = 'pendolino';
+pociag.wypisz = function() {
+  alert('Co to: ' + this.co_to);
+}
+pociag.wypisz();
+function pasazer(imie_pasazera, nazwisko_pasazera, pesel_pasazera, login_pasazera) {
+  this.imie = imie_pasazera;
+  this.nazwisko = nazwisko_pasazera;
+  this.pesel = pesel_pasazera;
+  this.login = login_pasazera;
+}
+pasazer.prototype.wypisz = function() {
+  alert(this.imie + ' ' + this.nazwisko + ' ' + this.pesel + ' ' + this.login);
+};
+var pasazer1 = new pasazer('Wiktor', 'Bieganski', '08821278154', 'wiktor_78');
+var pasazer2 = new pasazer('Adam', 'Soldayw', '80050787245', 'adi_22');
+var pasazer3 = new pasazer('Marek', 'Kaminski', '23410154332', 'marus_22');
+pasazer1.wypisz();
+pasazer2.wypisz();
+pasazer3.wypisz();
+document.write("<br>Dostęp do właściwości:" + "<br>");
+document.write("<br>pasazer pierwszy:" + " " + pasazer1.imie + " " + pasazer1.nazwisko + " " + pasazer1.pesel, " " + pasazer1.login);
+document.write("<br>pasazer drugi:" + " " + pasazer2.imie + " " + pasazer2.nazwisko + " " + pasazer2.pesel, " " + pasazer2.login);
+document.write("<br>pasazer trzeci:" + " " + pasazer3.imie + " " + pasazer3.nazwisko + " " + pasazer3.pesel, " " + pasazer3.login);
+</script>
+</head>
+<br>
+Programowanie obiektowe- Wiktor Bieganski
+</body>
+</html>
+
+</textarea>
+</TD>

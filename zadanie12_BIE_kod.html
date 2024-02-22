@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Bieganski()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        HTML:<br>
+        <textarea rows="32" cols="100" style="overflow:hidden" readonly>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Bieganski()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        <font style="color: green; font-size: 40px;">
+            <script>
+                
+       var G1_BIE = parseInt(prompt("Podaj pierwszą godzine: "));var D1_BIE = parseInt(prompt("Podaj pierwszy dzień: "));
+                var D2_BIE = parseInt(prompt("Podaj drugi dzień: "));
+     var G2_BIE = parseInt(prompt("Podaj drugą godzine: "));
+                if (D1_BIE < 1 || D1_BIE > 31 || D2_BIE > D1_BIE || D2_BIE > 31) {
+                    if (G1_BIE < 1 || G1_BIE > 24 || G2_BIE < 1 || G2_BIE > 24) {
+                    alert("Podane dni są niepoprawne.");
+                }}else{
+                    var roznicaD = Math.abs((D2_BIE - D1_BIE) * 86400); var roznicaG = Math.abs((G2_BIE - G1_BIE) * 3600);
+                    var roznicaG = Math.abs((G2_BIE - G1_BIE) * 3600);
+                   
+                    }
+                document.write("Różnica między tymi dniami i godzinami wynosi: ", suma, " sekund");
+            </script>
+        </font>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>
+        </textarea>
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>
